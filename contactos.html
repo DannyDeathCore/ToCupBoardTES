@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/contacto.css" rel="stylesheet">
+    <link rel="icon" href="images/ecuador.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <!-- Barra de navegación Bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">ToCupBoardTES</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html" id="#inicio-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html" id="#productos-link">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobrenosotros.html" id="#nosotros-link">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactos.html" id="#contacto-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="contacto">
+        <!-- Sección de contacto -->
+        <div class="container contact-section">
+            <div class="contact-form">
+                <h2>Contacto</h2>
+                <p>¡Contáctanos para obtener más información!</p>
+                
+                <!-- Formulario de contacto -->
+                <form action="procesar_formulario.php" method="post">
+                    <div class="form-group">
+                        <label for="nombre">Nombre*</label>
+                        <input type="text" id="nombre" name="nombre" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="asunto">Asunto*</label>
+                        <input type="text" id="asunto" name="asunto" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje*</label>
+                        <textarea id="mensaje" name="mensaje" class="form-control" rows="4" required></textarea>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="aceptar" name="aceptar" required>
+                        <label class="form-check-label" for="aceptar">Acepto la política de privacidad</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h2>Datos de Contacto</h2>
+                <p>Ubicación: Guayaquil, Ecuador</p>
+                <p>Dirección: Av. Principal, Ciudad Artesana</p>
+                <p>Teléfono: +593 123 456 789</p>
+                <p>Email: info@tocupboardtes.com</p>
+
+                <!-- Imágenes para mejorar la presentación -->
+                <img src="https://d9a107cd26.cbaul-cdnwnd.com/c77e579aaa525e5bd27b7212e458fe27/200000042-e4734e4736/DALL%C2%B7E%202024-09-04%2022.53.01%20-%20A%20creative%20logo%20for%20-ToCupboard%2C-%20featuring%20a%20sleek%2C%20modern%20design.%20The%20logo%20should%20evoke%20the%20idea%20of%20storage%20or%20organization%20with%20a%20focus%20on%20simplici.jpeg?ph=d9a107cd26" alt="Imagen 1" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer mt-auto py-3 bg-light">
+        <!-- Pie de página -->
+        <div class="container text-center">
+            <span class="text-muted">© 2024 ToCupBoardTES</span>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="scripts/script.js"></script>
+</body>
+</html>
+
+
